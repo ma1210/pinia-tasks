@@ -7,12 +7,11 @@
       <h1>Pinia Tasks</h1>
     </header>
 
-    <button @click="filter = 'all'">
-      Display All
-    </button>
-    <button @click="filter = 'favs'">
-      Display Favs
-    </button>
+    <!-- filter -->
+    <nav class="filter">
+      <button @click="filter = 'all'">All tasks</button>
+      <button @click="filter = 'favs'">Fav tasks</button>
+    </nav>
 
     <!-- task list -->
     <div class="task-list" v-if="filter === 'all'">
